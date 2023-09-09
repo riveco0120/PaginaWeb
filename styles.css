@@ -1,0 +1,357 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #0c97d2;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.menu-media {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.menu-media li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.menu-media a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu-media a:hover {
+    color: #3b5998; /* Color de Facebook */
+    font-size: 30px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 480px) {
+    header {
+        padding: 5px 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0;
+    }
+
+    .container {
+        padding: 10px;
+    }
+    .services{        
+        padding: 10px;
+    }
+}
+
+/* Estilos específicos para index.html (página de bienvenida) */
+#logo-empresa {
+    max-width: 100%;
+    display: block; /* Convierte la imagen en un elemento de bloque */
+    margin: -30px auto; /* Centra horizontalmente la imagen */
+    width: 200px; /* Ajusta el ancho deseado */
+    height: 200px; /* Ajusta la altura deseada */
+    border-radius: 50%; /* Redondea la imagen para que sea circular */
+    border: 2px solid #3b5998; /* Opcional: agrega un borde */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 10); /* Agrega sombra a la imagen */
+    z-index: 9999; /* Asegura que la imagen esté en la parte superior */
+
+}
+
+.about {
+    background-color: #f9f9f9;
+    padding: 30px;
+    text-align: center;
+    margin: 50px;
+}
+
+.about h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.services {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.services h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.services h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 0;
+}
+
+.services ul li .price {
+    font-size: 20px;
+    color: #333333;
+}
+
+/* Estilos para los botones de "Leer Más" */
+.services .read-more-button {
+    background-color: #4eb7fc;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.reviews .read-more-button {
+    background-color: #4eb7fc;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.services .read-more-button:hover {
+    background-color: #f516b2c6;
+}
+
+.reviews .read-more-button:hover {
+    background-color: #16e6f5a1;
+}
+
+/* Estilos para la sección "Reseñas" */
+.reviews {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.reviews h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.review-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.review-card p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.review-author {
+    margin-top: 15px;
+}
+
+.review-author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.review-author span {
+    font-weight: bold;
+    color: #333;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+
+/* Estilos específicos para register.html (página de registro) y login.html (página de inicio de sesión) */
+.register form,
+.login form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.register h2 {
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 28px; /* Tamaño de fuente */
+    color: #333; /* Color del texto */
+    margin-bottom: 20px; /* Espacio inferior */
+    text-transform: uppercase; /* Convierte el texto en mayúsculas */
+    font-weight: bold; /* Grosor del texto */
+}
+
+.login h2 {
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 28px; /* Tamaño de fuente */
+    color: #333; /* Color del texto */
+    margin-bottom: 20px; /* Espacio inferior */
+    text-transform: uppercase; /* Convierte el texto en mayúsculas */
+    font-weight: bold; /* Grosor del texto */
+}
+
+
+.register label,
+.login label,
+.register input,
+.login input,
+.register select,
+.login select,
+.register button,
+.login button {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+
+.register button,
+.login button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer-new{
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.social-media {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.social-media li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-media a:hover {
+    color: #3b5998; /* Color de Facebook */
+}
+
+/* Estilos para el logotipo de Facebook */
+.social-media .facebook-logo {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* Estilos para los botones de "Iniciar Sesión" y "Registro" en la página de registro */
+.register-button, .inicio-button, .login-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.register-button a {
+    text-decoration: none;
+    color: white;
+}
+
+.inicio-button a{
+    
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.register-button:hover,.inicio-button:hover, .login-button:hover {
+    background-color: #555;
+}
